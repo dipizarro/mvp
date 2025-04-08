@@ -1,0 +1,37 @@
+[
+  {
+    "id": "cs_test_a1cT670JWaS3Urd3oURjoY7Z5Y5c7xpEvRkC6xmCQF9Bqf9EmyglRumI0W",
+    "email": "diegoto.pizarro@gmail.com",
+    "amount": 500,
+    "status": "paid",
+    "date": "2025-04-02T21:28:56.348Z"
+  },
+  {
+    "id": "cs_test_a1HQrl5P8n6bMj6h6Tv8wyw9UQp1FaJ84a2noSBFXUgQq4a75mMkuTE3ev",
+    "email": "diegoto.pizarro@gmail.com",
+    "amount": 500,
+    "status": "paid",
+    "date": "2025-04-03T19:46:04.805Z"
+  },
+  {
+    "id": "cs_test_a1WnpSfVeJiDcj6IWOYspZKQ6iczNjtW7lwQFUa8Au2NcmJwc9R7IeK4t0",
+    "email": "diegoto.pizarro@gmail.com",
+    "amount": 500,
+    "status": "paid",
+    "date": "2025-04-08T19:56:04.448Z"
+  },
+  {
+    "id": "cs_test_a14DUCIQxlvo86YGUMU7xBuiwaffr97KetUaFocGXTHKXFInWLj1w4c6YC",
+    "email": "diegoto.pizarro@gmail.com",
+    "amount": 500,
+    "status": "paid",
+    "date": "2025-04-08T20:33:14.966Z"
+  },
+  {
+    "id": "cs_test_a10MGvChdWZItsllIEPj6slPqesgMQvTbOKK8DBii9ogtPVuXpXoXOAIQw",
+    "email": "diegoto.pizarro@gmail.com",
+    "amount": 500,
+    "status": "paid",
+    "date": "2025-04-08T20:37:15.835Z"
+  }
+]
