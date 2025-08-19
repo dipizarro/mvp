@@ -16,10 +16,10 @@ type TranspersonalPlanetsProps = {
     pluto?: PlanetData;
   };
   profile: Profile;
-  name: string;
+  name?: string;
 };
 
-export default function TranspersonalPlanetsSection({ data, profile, name }: TranspersonalPlanetsProps) {
+export default function TranspersonalPlanetsSection({ data, profile }: TranspersonalPlanetsProps) {
   const [expandAll, setExpandAll] = useState(false);
   const [openItems, setOpenItems] = useState<{ [key: string]: boolean }>({});
   const [isVisible, setIsVisible] = useState(false);

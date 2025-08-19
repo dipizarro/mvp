@@ -13,10 +13,10 @@ type HousesProps = {
     [key: string]: HouseData;
   };
   profile: Profile;
-  name: string;
+  name?: string;
 };
 
-export default function HousesSection({ data, profile, name }: HousesProps) {
+export default function HousesSection({ data, profile }: HousesProps) {
   const [expandAll, setExpandAll] = useState(false);
   const [openItems, setOpenItems] = useState<{ [key: string]: boolean }>({});
   const [isVisible, setIsVisible] = useState(false);

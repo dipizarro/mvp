@@ -15,10 +15,10 @@ type PersonalPlanetsProps = {
     mars?: PlanetData;
   };
   profile: Profile;
-  name: string;
+  name?: string;
 };
 
-export default function PersonalPlanetsSection({ data, profile, name }: PersonalPlanetsProps) {
+export default function PersonalPlanetsSection({ data, profile }: PersonalPlanetsProps) {
   const [expandAll, setExpandAll] = useState(false);
   const [openItems, setOpenItems] = useState<{ [key: string]: boolean }>({});
   const [isVisible, setIsVisible] = useState(false);

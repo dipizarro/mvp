@@ -4,7 +4,7 @@ import fs from "fs/promises";
 import path from "path";
 
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {});
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || 'sk_test_dummy', {});
 
 export async function POST(req: NextRequest) {
   const sig = req.headers.get("stripe-signature");

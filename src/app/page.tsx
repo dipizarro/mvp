@@ -245,10 +245,10 @@ export default function AstroHome() {
             </div>
             <div className="space-y-6 transition-all duration-500">
               <IdentitySection data={result.identity} profile={profile} name={name} />
-              <PersonalPlanetsSection data={result.personal_planets} profile={profile} name={name} />
-              <SocialPlanetsSection data={result.social_planets} profile={profile} name={name} />
-              <TranspersonalPlanetsSection data={result.transpersonal_planets} profile={profile} name={name} />
-              <HousesSection data={result.houses} profile={profile} name={name} />
+              <PersonalPlanetsSection data={result.personal_planets} profile={profile} />
+              <SocialPlanetsSection data={result.social_planets} profile={profile} />
+              <TranspersonalPlanetsSection data={result.transpersonal_planets} profile={profile} />
+              <HousesSection data={result.houses} profile={profile} />
             </div>
           </section>
         </>

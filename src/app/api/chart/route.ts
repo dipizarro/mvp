@@ -9,7 +9,7 @@ type ChartRequest = {
 };
 
 // Función para calcular posiciones planetarias (simplificada)
-function calculatePlanetaryPositions(date: string, _latitude: number, _longitude: number) {
+function calculatePlanetaryPositions(date: string) {
   // Esta es una implementación simplificada
   // En un entorno real, usarías una librería como swisseph o similar
   
@@ -341,7 +341,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Calcular posiciones planetarias
-    const positions = calculatePlanetaryPositions(body.date, body.latitude, body.longitude);
+    const positions = calculatePlanetaryPositions(body.date);
     
     // Generar interpretaciones
     const reading = generateInterpretations(positions, body.type, 'Usuario');

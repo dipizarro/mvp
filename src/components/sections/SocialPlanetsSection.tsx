@@ -14,10 +14,10 @@ type SocialPlanetsProps = {
     saturn?: PlanetData;
   };
   profile: Profile;
-  name: string;
+  name?: string;
 };
 
-export default function SocialPlanetsSection({ data, profile, name }: SocialPlanetsProps) {
+export default function SocialPlanetsSection({ data, profile }: SocialPlanetsProps) {
   const [expandAll, setExpandAll] = useState(false);
   const [openItems, setOpenItems] = useState<{ [key: string]: boolean }>({});
   const [isVisible, setIsVisible] = useState(false);
