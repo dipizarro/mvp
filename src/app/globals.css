@@ -43,8 +43,17 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  background-color: #f9fafb;
+  background-image: url('/animated-star-image.gif');
+  background-size: auto;
+  background-repeat: repeat;
+  background-position: top left;
+  background-attachment: fixed;
+  color: white;
 }
 
 :root {
@@ -125,18 +134,25 @@ body {
   }
 }
 
-/* 🌌 Fondo de estrellas animadas */
 .starry-background {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -10;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.45;
+  z-index: -1;
   pointer-events: none;
 }
+
+.fade-transition {
+  transition: background-image 1.5s ease-in-out;
+}
+
+
 
 .starry-background::before,
 .starry-background::after {

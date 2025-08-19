@@ -1,6 +1,7 @@
-// layout.tsx
+import React from 'react';
 import "./globals.css";
 import type { Metadata } from "next";
+import StarryBackground from "../app/StarryBackground";
 
 export const metadata: Metadata = {
   title: "Genera tu Carta Astral",
@@ -15,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className="bg-gradient-to-br from-indigo-900 via-purple-900 to-black text-white min-h-screen">
-        <div className="starry-background" />
+        <StarryBackground />
         {children}
       </body>
     </html>
